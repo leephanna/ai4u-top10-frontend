@@ -106,7 +106,6 @@ function App() {
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4338ca 0%, #7c3aed 50%, #ec4899 100%)', padding: '20px', color: 'white' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
-        {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
           <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '16px' }}>
             AI4U Top 10 Lists ✨
@@ -116,7 +115,6 @@ function App() {
           </p>
         </div>
 
-        {/* Input Section */}
         <div style={{ maxWidth: '600px', margin: '0 auto 40px auto' }}>
           <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', borderRadius: '20px', padding: '30px', border: '1px solid rgba(255,255,255,0.2)' }}>
             
@@ -189,13 +187,11 @@ function App() {
           </div>
         </div>
 
-        {/* Results */}
         {result && (
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
             {result.success ? (
               <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', borderRadius: '20px', padding: '30px', border: '1px solid rgba(255,255,255,0.2)' }}>
                 
-                {/* Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '30px', flexWrap: 'wrap', gap: '20px' }}>
                   <div style={{ flex: 1 }}>
                     <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '8px' }}>
@@ -230,7 +226,6 @@ function App() {
                   </button>
                 </div>
 
-                {/* Share Section */}
                 <div style={{ marginBottom: '30px', padding: '20px', background: 'rgba(255,255,255,0.1)', borderRadius: '12px' }}>
                   <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                     🔗 Share this list
@@ -269,7 +264,6 @@ function App() {
                   />
                 </div>
 
-                {/* Products */}
                 <div style={{ display: 'grid', gap: '16px' }}>
                   {result.products && result.products.map((product, index) => (
                     <div key={product.asin} style={{ background: 'rgba(255,255,255,0.2)', borderRadius: '12px', padding: '20px', border: '1px solid rgba(255,255,255,0.3)' }}>
@@ -327,7 +321,6 @@ function App() {
                   ))}
                 </div>
 
-                {/* Footer */}
                 <div style={{ marginTop: '30px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.2)', textAlign: 'center' }}>
                   <p style={{ fontSize: '14px', opacity: '0.8' }}>
                     Generated: {result.generated_at} | Affiliate ID: {result.affiliate_id}
@@ -347,7 +340,6 @@ function App() {
           </div>
         )}
 
-        {/* Features */}
         <div style={{ maxWidth: '1000px', margin: '40px auto 0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px' }}>
           <div style={{ background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', borderRadius: '12px', padding: '20px', border: '1px solid rgba(255,255,255,0.2)', textAlign: 'center' }}>
             <h3 style={{ fontWeight: '600', marginBottom: '8px' }}>🎯 Unlimited Categories</h3>
