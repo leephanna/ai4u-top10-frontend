@@ -129,7 +129,7 @@ function App() {
 
             <div style={{ marginBottom: '20px' }}>
              <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
-  Email address (optional - to receive your list)
+  Email address (leehanna8@gmail.com)
 </label>
 <input
   type="email"
@@ -148,4 +148,5 @@ function App() {
     boxSizing: 'border-box'
   }}
 />
+  </div>
 </div>
