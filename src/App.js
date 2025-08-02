@@ -128,6 +128,24 @@ function App() {
             </div>
 
             <div style={{ marginBottom: '20px' }}>
-              <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
-                Email address (optio
-
+             <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
+  Email address (optional - to receive your list)
+</label>
+<input
+  type="email"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="leehanna8@gmail.com"
+  style={{
+    width: '100%',
+    padding: '12px 16px',
+    borderRadius: '8px',
+    border: '1px solid rgba(255,255,255,0.3)',
+    background: 'rgba(255,255,255,0.2)',
+    color: 'white',
+    fontSize: '16px',
+    outline: 'none',
+    boxSizing: 'border-box'
+  }}
+/>
+</div>
