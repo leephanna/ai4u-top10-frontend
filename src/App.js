@@ -129,7 +129,7 @@ function App() {
 
             <div style={{ marginBottom: '20px' }}>
              <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
-  Email address (leehanna8@gmail.com)
+  Email address (optional - to receive your list)
 </label>
 <input
   type="email"
