@@ -148,5 +148,6 @@ function App() {
     boxSizing: 'border-box'
   }}
 />
+    </div>
   </div>
 </div>
