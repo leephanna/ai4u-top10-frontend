@@ -4,7 +4,7 @@ import './App.css';
 
 const API_BASE_URL = 'https://ai4u-top10-backend.vercel.app';
 
-const AmazonTop10App = () => {
+function App() {
   const [prompt, setPrompt] = useState('');
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
@@ -250,7 +250,7 @@ const AmazonTop10App = () => {
                 </div>
 
                 <div className="grid gap-4">
-                  {result.products.map((product, index) => (
+                  {result.products && result.products.map((product, index) => (
                     <div key={product.asin} className="bg-white/20 rounded-lg p-4 border border-white/30">
                       <div className="flex items-start gap-4">
                         <div className="flex-shrink-0">
@@ -334,6 +334,6 @@ const AmazonTop10App = () => {
       </div>
     </div>
   );
-};
+}
 
-export default AmazonTop10App;
+export default App;
