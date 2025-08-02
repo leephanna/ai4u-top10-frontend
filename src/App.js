@@ -103,51 +103,57 @@ function App() {
             border: '1px solid rgba(255,255,255,0.2)'
           }}>
 
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
-                What products are you looking for?
-              </label>
-              <input
-                type="text"
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
-                placeholder="e.g., organic potato chips, baby diapers, gaming laptops..."
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: '8px',
-                  border: '1px solid rgba(255,255,255,0.3)',
-                  background: 'rgba(255,255,255,0.2)',
-                  color: 'white',
-                  fontSize: '16px',
-                  outline: 'none',
-                  boxSizing: 'border-box'
-                }}
-                onKeyPress={(e) => e.key === 'Enter' && !loading && generateList()}
-              />
-            </div>
-
-            <div style={{ marginBottom: '20px' }}>
-             <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
-  Email address (optional - to receive your list)
-</label>
-<input
-  type="email"
-  value={email}
-  onChange={(e) => setEmail(e.target.value)}
-  placeholder="leehanna8@gmail.com"
-  style={{
-    width: '100%',
-    padding: '12px 16px',
-    borderRadius: '8px',
-    border: '1px solid rgba(255,255,255,0.3)',
-    background: 'rgba(255,255,255,0.2)',
-    color: 'white',
-    fontSize: '16px',
-    outline: 'none',
-    boxSizing: 'border-box'
-  }}
-/>
+            <div style={{ maxWidth: '600px', margin: '0 auto 40px auto' }}>
+  <div style={{
+    background: 'rgba(255,255,255,0.1)',
+    borderRadius: '20px',
+    padding: '30px',
+    border: '1px solid rgba(255,255,255,0.2)'
+  }}>
+    <div style={{ marginBottom: '20px' }}>
+      <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
+        What products are you looking for?
+      </label>
+      <input
+        type="text"
+        value={prompt}
+        onChange={e => setPrompt(e.target.value)}
+        placeholder="e.g., organic potato chips, baby diapers, gaming laptops..."
+        style={{
+          width: '100%',
+          padding: '12px 16px',
+          borderRadius: '8px',
+          border: '1px solid rgba(255,255,255,0.3)',
+          background: 'rgba(255,255,255,0.2)',
+          color: 'white',
+          fontSize: '16px',
+          outline: 'none',
+          boxSizing: 'border-box'
+        }}
+        onKeyPress={e => e.key === 'Enter' && !loading && generateList()}
+      />
+    </div>
+    <div style={{ marginBottom: '20px' }}>
+      <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', marginBottom: '8px' }}>
+        Email address (optional - to receive your list)
+      </label>
+      <input
+        type="email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        placeholder="leehanna8@gmail.com"
+        style={{
+          width: '100%',
+          padding: '12px 16px',
+          borderRadius: '8px',
+          border: '1px solid rgba(255,255,255,0.3)',
+          background: 'rgba(255,255,255,0.2)',
+          color: 'white',
+          fontSize: '16px',
+          outline: 'none',
+          boxSizing: 'border-box'
+        }}
+      />
     </div>
   </div>
 </div>
